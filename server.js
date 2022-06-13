@@ -32,7 +32,7 @@ const app = express();
 app.use(cors());
 app.use(bodyParser.json());
 
-const port = 3000;
+// const port = 3000;
 
 
 
@@ -65,6 +65,6 @@ app.put('/image', image.handleImage(db));
 app.post('/imageurl', (req, res) => {image.handleApiCall(req, res)});
 //IMAGEURL
 
-app.listen(process.env.PORT || port , () => {
+app.listen(process.env.PORT || 3000 , () => {
 	console.log(`App is running on port ${process.env.PORT}`);
 })
