@@ -39,7 +39,6 @@ app.use(bodyParser.json());
 //ROOT
 app.get('/' , (req , res) => {
 	// res.json(database.users);
-	console.log('This is perfectly working!')
   res.json('This is perfectly working!')
 })
 //ROOT
