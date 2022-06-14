@@ -15,7 +15,7 @@ const image = require('./controllers/image');
 const db = knex({	//using knexjs to connect the server to the postgres database
   client: 'pg',
   connection: {
-    host : process.env.DATABASE_URL,
+    connectionString : process.env.DATABASE_URL,
     ssl: true,
   }
 });
