@@ -10,7 +10,7 @@ const signin = require('./controllers/signin');
 const profile = require('./controllers/profile');
 const image = require('./controllers/image');
 
-
+process.env.NODE_TLS_REJECT_UNAUTHORIZED = 0;
 
 const db = knex({	//using knexjs to connect the server to the postgres database
   client: 'pg',
